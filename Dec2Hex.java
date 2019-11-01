@@ -20,9 +20,13 @@ public class Dec2Hex
 	
         while (Arg1 == 0) {
 			System.out.println("");
-        	System.out.print("Enter value: ");
+        	System.out.print("Enter value or enter 'q' to quit the program: ");
+          	input = scanner.nextLine();
+			if ("Q".equals(input) || "q".equals(input)) {
+				System.out.println("\nGoodbye.");
+				System.exit(1);
+			}
       		try {
-                	input = scanner.nextLine();
                     Arg1 = Integer.parseInt(input);
             } 
             catch (NumberFormatException e) {
