@@ -43,7 +43,7 @@ public class Dec2Hex
 				hexadecimal= ch[rem] + hexadecimal;
 				num= num/16;
 			}
-			if (hexadecimal == "") {
+			if (hexadecimal.equals("")) {
 				hexadecimal = "0";
 			}
 			System.out.println("Hexadecimal representation is : " + hexadecimal);
