@@ -8,17 +8,15 @@ public class Dec2Hex
     {
         Scanner scanner = new Scanner(System.in);
         String input = "";
-		while (1==1) {
+		do {
 			if (args.length > 0) {
 				try {
 				Arg1 = Integer.parseInt(args[0]);
 				} 
 				catch (NumberFormatException e) {
-				System.err.println("Argument '" + args[0] + "' must be an integer.");
+					System.err.println("Argument '" + args[0] + "' must be an integer.");
 				}
-			}
-	
-			do {
+			} else {
 				System.out.print("\nEnter value or enter 'q' to quit the program: ");
 				input = scanner.nextLine();
 				if ("Q".equals(input) || "q".equals(input)) {
@@ -32,8 +30,7 @@ public class Dec2Hex
 				catch (NumberFormatException e) {
                     System.err.println("Argument '" + input + "' must be an integer.");
 				}
-			} while (Arg1 < 0);
-
+			}
 
 			char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
 			int rem, num;
@@ -50,6 +47,6 @@ public class Dec2Hex
 				hexadecimal = "0";
 			}
 			System.out.println("Hexadecimal representation is : " + hexadecimal);
-		}
+		} while (args.length <= 0);
     }
 }
