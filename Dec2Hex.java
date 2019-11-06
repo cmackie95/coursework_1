@@ -19,8 +19,7 @@ public class Dec2Hex
 			}
 	
 			do {
-				System.out.println("");
-				System.out.print("Enter value or enter 'q' to quit the program: ");
+				System.out.print("\nEnter value or enter 'q' to quit the program: ");
 				input = scanner.nextLine();
 				if ("Q".equals(input) || "q".equals(input)) {
 					scanner.close();
