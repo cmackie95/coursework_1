@@ -8,6 +8,7 @@ public class Dec2Hex
     {
         Scanner scanner = new Scanner(System.in);
         String input = "";
+		while (1==1) {
 			if (args.length > 0) {
 				try {
 				Arg1 = Integer.parseInt(args[0]);
@@ -50,5 +51,6 @@ public class Dec2Hex
 				hexadecimal = "0";
 			}
 			System.out.println("Hexadecimal representation is : " + hexadecimal);
+		}
     }
 }
